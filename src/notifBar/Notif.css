@@ -1,0 +1,110 @@
+.notif-bar{
+    background-color: #454444;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 65px;
+    align-items: center;
+  }
+  
+  .phone-number{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .discount{
+    display: flex;
+    align-content: center;
+    gap: 17px;
+  }
+
+  .discount a{
+    font-weight: 700;
+  }
+
+  
+  .discount span{
+    font-size: 2rem;
+    font-weight: 900;
+    
+  }
+  
+  .selection{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .selection select{
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF; 
+    font-family: "Inter", sans-serif;
+    outline: none;
+  }
+  
+  .notif-bar p{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+  }
+  .notif-bar span{
+    color: white;
+  }
+  .notif-bar a{
+    text-decoration: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+  }
+
+
+  @media only screen and (max-width: 880px){
+    .notif-bar{
+        padding: 18px 25px;
+    }
+    .selection{
+        gap: 5px;
+    }
+    html{
+        font-size: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 815px) {
+    .notif-bar{
+        padding: 10px 5px;
+    }
+    .discount a {
+        display: none;
+    }
+    .discount span{
+      display: none;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+    .selection select{
+        font-size: 1.5rem;
+    }
+    span{
+        font-size: 1.5rem;
+    }
+    .phone-number span{
+        font-size: 1.8rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 570px){
+    .discount{
+        display: none;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    .selection select{
+        font-size: 1.2rem;
+    }
+    .phone-number span{
+        font-size: 1.6rem;
+    }
+  }
